@@ -1,0 +1,5 @@
+/* highlights the current page in the navbar */
+a.current_page:link, a.current_page:visited {
+    color: white;
+    background-color: black;
+}
