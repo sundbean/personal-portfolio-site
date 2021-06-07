@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Monda&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     color:rgb(6, 68, 32);
     font-family: 'Monda', sans-serif;
 }
@@ -33,12 +33,6 @@ footer {
     grid-template: auto / 1fr 1fr 1fr;
 }
 
-/* highlights the current page in the navbar */
-a.current-page:link, a.current_page:visited {
-    color: white;
-    background-color: black;
-}
-
 .my-name {
     align-self: center;
     margin-left: 2em;
@@ -58,7 +52,8 @@ a.current-page:link, a.current_page:visited {
     font-family: 'Monda', sans-serif;
     float: right;
     align-self: center;
-    grid-column-start: 3;
+    grid-column-start: -1;
+    padding-right: 3em;
 }
 
 .navbar a {
@@ -178,7 +173,9 @@ a.current-page:link, a.current_page:visited {
     text-align: center;
 }
 
-/* About page styles */
-#wet-backpacker {
-    
-}
+
+/* highlights the current page in the navbar */
+/* a.current-page:link, a.current_page:visited {
+    color: white;
+    background-color: black;
+} */
