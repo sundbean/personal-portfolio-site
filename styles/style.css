@@ -1,5 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Monda&display=swap');
+
+* {
+    box-sizing: border-box;
+    color:rgb(6, 68, 32);
+    font-family: 'Monda', sans-serif;
+}
+
+body {
+    background-color: #fdfaf6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        'hd hd hd'
+        'feat feat feat'
+        'ft ft ft';
+    height: 100vh;
+}
+
+header {
+    background-color: #faf1e6;
+    grid-area: hd;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+}
+
+footer {
+    grid-area: ft;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+}
+
 /* highlights the current page in the navbar */
-a.current_page:link, a.current_page:visited {
+a.current-page:link, a.current_page:visited {
     color: white;
     background-color: black;
+}
+
+.my-name {
+    align-self: center;
+    margin-left: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.my-name a {
+    text-decoration: none;
+    font-family: 'Mate SC', serif;
+    font-size: 2em;
+    color: #064420;
+}
+
+/* place navbar in center of grid row */
+.navbar {
+    font-family: 'Monda', sans-serif;
+    float: right;
+    align-self: center;
+    grid-column-start: 3;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #064420;
+    padding-left: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgba(6, 68, 32, .7);
+}
+
+.featured {
+    grid-area: feat;
+    display: flex;
+    padding-left: 3em;
+    margin-right: 10px;
+    width: 95vw;
+    height: 100%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured li {
+    flex: 20%;
+    padding-left: 0;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.featured li img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.social-icons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* margin-left to center the menu */
+.social-menu {
+    list-style-type: none;
+    display: flex;
+    margin-left: 90px;
+}
+
+.social-menu li {
+    flex-direction: row;
+    place-items: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #064420;
+}
+
+/* Add a hover effect to font awesome icons */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.signature {
+    padding-left: 8em;
+    padding-top: 1em;
+    color: rgba(6, 68, 32, 0.6)
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(6, 68, 32, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: #fdfaf6;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* About page styles */
+#wet-backpacker {
+    
 }
