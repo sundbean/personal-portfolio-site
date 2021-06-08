@@ -1,20 +1,20 @@
 .page-content {
-    padding-left: 4em;
+    padding: 2em;
     width: 90vw;
-    display: flex;
 }
 
-
-
-/* .about-page {
-} */
-
-
-/* #wet-backpacker {
-    max-width: 500px;
+h2 {
+    text-align: center;
 }
 
-#wet-backpacker img {
-    max-width: 100%;
+#whit-img {
+    max-width: 300px;
     height: auto;
-} */
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+p {
+    overflow: hidden;
+}

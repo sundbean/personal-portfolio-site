@@ -20,15 +20,14 @@ body {
     height: 100vh;
 }
 
+
+/************
+ ** HEADER **
+ ************/
+
 header {
     background-color: #faf1e6;
     grid-area: hd;
-    display: grid;
-    grid-template: auto / 1fr 1fr 1fr;
-}
-
-footer {
-    grid-area: ft;
     display: grid;
     grid-template: auto / 1fr 1fr 1fr;
 }
@@ -68,6 +67,10 @@ footer {
     color: rgba(6, 68, 32, .7);
 }
 
+/******************
+ ** MAIN SECTION **
+ ******************/
+
 .featured {
     grid-area: feat;
     display: flex;
@@ -91,54 +94,6 @@ footer {
     width: 100%;
     height: 60vh;
     object-fit: cover;
-}
-
-.social-icons {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-/* margin-left to center the menu */
-.social-menu {
-    list-style-type: none;
-    display: flex;
-    margin: auto;
-}
-
-.social-menu li {
-    flex-direction: row;
-    place-items: center;
-}
-
-/* Style all font awesome icons */
-.fa {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: #064420;
-}
-
-/* Add a hover effect to font awesome icons */
-.fa:hover {
-    opacity: 0.7;
-}
-
-.copyright {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    text-align: center;
-}
-
-.signature {
-    float: right;
-    padding-top: 1em;
-    padding-right: 10%;
-    font-size: x-small;
-    color: rgba(6, 68, 32, 0.6)
 }
 
 .overlay {
@@ -174,6 +129,67 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/************
+ ** FOOTER **
+ ************/
+
+footer {
+    grid-area: ft;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+}
+
+.social-icons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: auto;
+}
+
+/* margin-left to center the menu */
+.social-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.social-menu li {
+    flex-direction: row;
+    place-items: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #064420;
+}
+
+/* Add a hover effect to font awesome icons */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: auto 0;
+}
+
+.signature {
+    float: right;
+    /* padding-top: 1em; */
+    padding-right: 8.5%;
+    padding-bottom: 3%;
+    font-size: x-small;
+    color: rgba(6, 68, 32, 0.6)
+}
+
+
 
 
 /* highlights the current page in the navbar */
