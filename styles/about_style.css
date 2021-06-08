@@ -1,40 +1,20 @@
-#about-me {
+.page-content {
     padding-left: 4em;
     width: 90vw;
+    display: flex;
 }
 
-/*
 
-.about-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas:
-        'ttl ttl ttl'
-        'abt abt abt'
-        'msn msn msn';
-}
 
-.my-name {
-    grid-area: ttl;
-}
+/* .about-page {
+} */
 
-.about-me-body {
-    grid-area: abt;
-}
 
-.mission-statement-body {
-    grid-area: msn;
-}
-
-#wet-backpacker {
-    grid-area: img;
+/* #wet-backpacker {
     max-width: 500px;
 }
 
 #wet-backpacker img {
-    display: block;
     max-width: 100%;
     height: auto;
 } */

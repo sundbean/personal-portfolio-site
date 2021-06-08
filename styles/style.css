@@ -11,7 +11,7 @@ body {
     background-color: #fdfaf6;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-gap: 10px;
     grid-template-areas:
         'hd hd hd'
@@ -37,7 +37,7 @@ footer {
     align-self: center;
     margin-left: 2em;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 
 .my-name a {
@@ -102,7 +102,7 @@ footer {
 .social-menu {
     list-style-type: none;
     display: flex;
-    margin-left: 90px;
+    margin: auto;
 }
 
 .social-menu li {
@@ -134,8 +134,10 @@ footer {
 }
 
 .signature {
-    padding-left: 8em;
+    float: right;
     padding-top: 1em;
+    padding-right: 10%;
+    font-size: x-small;
     color: rgba(6, 68, 32, 0.6)
 }
 
