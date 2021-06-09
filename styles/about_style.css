@@ -1,20 +1,23 @@
-.page-content {
-    padding: 2em;
-    width: 90vw;
+main {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
 }
 
-h2 {
-    text-align: center;
+.main-grid {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-#whit-img {
-    max-width: 300px;
-    height: auto;
-    float: left;
-    margin-right: 2em;
-    margin-bottom: 1em;
+#about-img {
+    grid-column: 2 / 3;
+    max-width: 20vw;
+    padding-right: 2em;
+    align-self: center;
 }
 
-p {
-    overflow: hidden;
+.about-me {
+    grid-column: 3 / -2;
+    align-self: center;
 }
