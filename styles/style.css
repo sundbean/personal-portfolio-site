@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200&display=swap');
 
 * {
     /* box-sizing: border-box; */
-    color:rgb(6, 68, 32);
-    font-family: 'Monda', sans-serif;
+    color: black;
+    font-family: 'Exo', sans-serif;
 }
 
-body {
-    background-color: #fdfaf6;
+.grid-container {
+    background-color: white;
     display: grid;
     grid-template-rows: auto 1fr auto;
     /* grid-template-columns: 1fr 1fr 1fr; */
@@ -17,7 +18,7 @@ body {
         'hd hd hd'
         'feat feat feat'
         'ft ft ft';
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -26,7 +27,7 @@ body {
  ************/
 
 header {
-    background-color: #faf1e6;
+    background-color: rgb(245, 245, 245);
     grid-area: hd;
     display: grid;
     grid-template: auto / 1fr 1fr 1fr;
@@ -41,14 +42,15 @@ header {
 
 .my-name a {
     text-decoration: none;
-    font-family: 'Mate SC', serif;
+    font-family: 'Exo', sans-serif;
     font-size: 2em;
-    color: #064420;
+    color: black;
 }
 
 /* place navbar in center of grid row */
 .navbar {
-    font-family: 'Monda', sans-serif;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
     float: right;
     align-self: center;
     grid-column-start: -1;
@@ -57,14 +59,14 @@ header {
 
 .navbar a {
     font-size: 20px;
-    color: #064420;
+    color: black;
     padding-left: 2em;
     text-align: center;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: rgba(6, 68, 32, .7);
+    color: rgba(0, 0, 0, .7);
 }
 
 /******************
@@ -74,9 +76,9 @@ header {
 .featured {
     grid-area: feat;
     display: flex;
-    padding-left: 3em;
-    margin-right: 10px;
-    width: 95vw;
+    padding-left: 3em; /**/
+    margin-right: 10px; /**/
+    width: 90vw;
     height: 100%;
     list-style-type: none;
     align-items: center;
@@ -85,9 +87,9 @@ header {
 
 .featured li {
     flex: 20%;
-    padding-left: 0;
+    padding-left: 5px;
     justify-content: space-evenly;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .featured li img {
@@ -101,7 +103,7 @@ header {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(6, 68, 32, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -119,7 +121,7 @@ header {
 }
 
 .text {
-    color: #fdfaf6;
+    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -166,7 +168,7 @@ footer {
     width: 50px;
     text-align: center;
     text-decoration: none;
-    color: #064420;
+    color: black;
 }
 
 /* Add a hover effect to font awesome icons */
@@ -186,7 +188,7 @@ footer {
     padding-right: 8.5%;
     padding-bottom: 3%;
     font-size: x-small;
-    color: rgba(6, 68, 32, 0.6)
+    color: rgba(0,0,0, 0.6)
 }
 
 
