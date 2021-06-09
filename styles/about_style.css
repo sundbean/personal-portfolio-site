@@ -17,7 +17,7 @@ main {
     align-self: center;
 }
 
-.about-me {
+.about-text {
     grid-column: 3 / -2;
     align-self: center;
 }
