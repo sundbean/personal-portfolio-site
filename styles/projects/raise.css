@@ -1,0 +1,26 @@
+
+.main-grid {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+video {
+    align-self: center;
+    width: 17vw;
+    height: auto;
+    padding-top: 2em;
+}
+
+.page-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 3em;
+    width: 100%;
+    height: auto;
+}
+
+
